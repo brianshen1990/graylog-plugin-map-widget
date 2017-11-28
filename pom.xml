@@ -9,7 +9,7 @@
         <groupId>org.graylog.plugins</groupId>
         <artifactId>graylog-plugin-web-parent</artifactId>
         <version>2.3.1</version>
-        <relativePath>../graylog2-server/graylog-plugin-parent/graylog-plugin-web-parent</relativePath>
+        <relativePath>../graylog-plugin-parent/graylog-plugin-web-parent</relativePath>
     </parent>
 
     <groupId>org.graylog.plugins</groupId>

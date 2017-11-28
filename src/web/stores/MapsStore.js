@@ -41,12 +41,12 @@ export const MapsStore = Reflux.createStore({
       error => {
         let errorMessage;
         if (error.additional && error.additional.status === 400) {
-          errorMessage = 'Map widget is only available for fields containing geo data.';
+          errorMessage = '地图插件只可以应用在包含地理信息的字段上.';
         } else {
-          errorMessage = `Loading map information failed: ${error.message}`;
+          errorMessage = `导入地图信息失败: ${error.message}`;
         }
 
-        UserNotification.error(errorMessage, 'Could not load map information');
+        UserNotification.error(errorMessage, '无法导入地图信息');
       }
     );
 

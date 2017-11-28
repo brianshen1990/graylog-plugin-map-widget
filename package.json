@@ -19,6 +19,6 @@
     "react-leaflet": "~0.10.0"
   },
   "devDependencies": {
-    "graylog-web-plugin": "file:../graylog2-server/graylog2-web-interface/packages/graylog-web-plugin"
+    "graylog-web-plugin": "file:../graylog2-web-interface/packages/graylog-web-plugin"
   }
 }

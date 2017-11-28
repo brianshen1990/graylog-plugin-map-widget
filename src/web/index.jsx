@@ -14,7 +14,7 @@ const manifest = new PluginManifest(packageJson, {
   widgets: [
     {
       type: 'org.graylog.plugins.map.widget.strategy.MapWidgetStrategy',
-      displayName: 'Map',
+      displayName: '地图',
       defaultHeight: 2,
       defaultWidth: 2,
       visualizationComponent: MapVisualization,
@@ -23,7 +23,7 @@ const manifest = new PluginManifest(packageJson, {
   fieldAnalyzers: [
     {
       refId: 'fieldAnalyzerMapComponent',
-      displayName: 'World Map',
+      displayName: '地图',
       component: FieldAnalyzerMapComponent,
       displayPriority: 100,
     },

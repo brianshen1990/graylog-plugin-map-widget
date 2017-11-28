@@ -19,7 +19,7 @@ const MapVisualization = React.createClass({
   },
   getInitialState() {
     return {
-      zoomLevel: 1,
+      zoomLevel: 2,
       isComponentMounted: false, // Leaflet operates directly with the DOM, so we need to wait until it is ready :grumpy:
     };
   },
@@ -54,9 +54,9 @@ const MapVisualization = React.createClass({
       <CircleMarker key={coordinates} center={formattedCoordinates} radius={radius} color="#AF2228" fillColor="#D3242B" weight={2} opacity={0.8}>
         <Popup>
             <dl>
-              <dt>Coordinates:</dt>
+              <dt>坐标:</dt>
               <dd>{coordinates}</dd>
-              <dt>Number of occurrences:</dt>
+              <dt>出现次数:</dt>
               <dd>{occurrences}</dd>
             </dl>
         </Popup>

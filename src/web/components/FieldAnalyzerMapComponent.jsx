@@ -119,16 +119,16 @@ const FieldAnalyzerMapComponent = React.createClass({
       content = (
         <div className="content-col">
           <div className="pull-right">
-            <AddToDashboardMenu title="Add to dashboard"
+            <AddToDashboardMenu title="添加到面板"
                                 widgetType={this.WIDGET_TYPE}
                                 configuration={{field: this.state.field}}
                                 bsStyle="default"
                                 pullRight
                                 permissions={this.props.permissions}>
-              <Button bsSize="small" onClick={() => this._resetStatus()}>Dismiss</Button>
+              <Button bsSize="small" onClick={() => this._resetStatus()}>删除</Button>
             </AddToDashboardMenu>
           </div>
-          <h1>Map for field: {this.state.field}</h1>
+          <h1>地图 - : {this.state.field}</h1>
 
           <div ref="mapContainer" style={{maxHeight: 400, overflow: 'auto', marginTop: 10}}>{inner}</div>
         </div>
